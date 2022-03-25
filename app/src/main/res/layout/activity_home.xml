@@ -20,7 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="@string/indian_institute_of_information_allahabad"
+        android:text="@string/INDIAN_INSTITUTE_OF_INFORMATION_TECHNOLOGY_ALLAHABAD"
         android:textColor="#0066B6"
         android:textSize="40sp" />
 
