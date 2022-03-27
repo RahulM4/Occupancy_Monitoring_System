@@ -7,4 +7,5 @@
     <string name="date_time">Date/time</string>
     <string name="occupancy_status">Occupancy Status</string>
     <string name="update">Update Details</string>
+    <string name="query1">For any query or assistance:</string>
 </resources>
