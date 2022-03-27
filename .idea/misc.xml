@@ -10,7 +10,10 @@
         <entry key="..\:/Users/rahul/AndroidStudioProjects/OMS/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/rahul/AndroidStudioProjects/OMS/app/src/main/res/layout/activity_mobileotp_verification.xml" value="0.125" />
         <entry key="..\:/Users/rahul/AndroidStudioProjects/OMS/app/src/main/res/layout/activity_register.xml" value="0.125" />
-        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_home.xml" value="0.136" />
+        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_home.xml" value="0.152" />
+        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_login.xml" value="0.128" />
+        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_mobileotp_verification.xml" value="0.125" />
+        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_register.xml" value="0.128" />
       </map>
     </option>
   </component>

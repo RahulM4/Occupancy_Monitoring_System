@@ -7,102 +7,114 @@
     android:background="#8612314A"
     tools:context=".Register">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+
 
         <TextView
             android:id="@+id/R_title"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="40dp"
             android:background="#655F5F"
             android:text=" Register yourself "
             android:textColor="@color/white"
             android:textSize="60sp" />
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/R_title"
-            android:layout_centerInParent="true"
-            android:layout_marginTop="40dp"
-
-            android:orientation="vertical"
+        <androidx.cardview.widget.CardView
+            android:layout_width="500dp"
+            android:layout_height="650dp"
+            android:layout_below="@id/R_title"
+            android:layout_centerHorizontal="true"
+            app:cardBackgroundColor="#F1D907">
 
 
-            >
-
-            <EditText
-                android:id="@+id/name"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="#686868"
-                android:hint=" Enter your name here "
-                android:textColorHint="@color/white"
-                android:textSize="30dp" />
+                android:layout_below="@+id/R_title"
+                android:layout_centerInParent="true"
+                android:orientation="vertical">
 
-            <EditText
-                android:id="@+id/email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="#686868"
-                android:hint=" Enter your IITA email only "
-                android:textColorHint="@color/white"
-                android:textSize="30dp" />
+                <EditText
+                    android:id="@+id/name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="#686868"
+                    android:hint=" Enter your name here "
+                    android:inputType="textPersonName"
+                    android:maxLines="1"
+                    android:textColorHint="@color/white"
+                    android:textSize="40dp" />
 
-            <EditText
-                android:id="@+id/mobile"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="#686868"
-                android:hint=" Enter your mobile here "
-                android:textColorHint="@color/white"
-                android:textSize="30dp" />
+                <EditText
+                    android:id="@+id/email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="#686868"
+                    android:hint=" Enter your IITA email only "
+                    android:inputType="textEmailAddress"
+                    android:maxLines="1"
+                    android:textColorHint="@color/white"
+                    android:textSize="40dp" />
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="#686868"
-                android:hint=" Choose password! "
-                android:textColorHint="@color/white"
-                android:textSize="30dp" />
+                <EditText
+                    android:id="@+id/mobile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="#686868"
+                    android:hint=" Enter your mobile here "
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:textColorHint="@color/white"
+                    android:textSize="40dp" />
 
-            <EditText
-                android:id="@+id/confirm_password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="#686868"
-                android:hint=" Confirm password!! "
-                android:textColorHint="@color/white"
-                android:textSize="30dp" />
-            <Button
-                android:id="@+id/register"
-                android:text="Register Now"
-                android:textSize="30sp"
+                <EditText
+                    android:id="@+id/password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="#686868"
+                    android:hint=" Choose password! "
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textColorHint="@color/white"
+                    android:textSize="40dp" />
 
-                android:layout_margin="20dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                <EditText
+                    android:id="@+id/confirm_password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="#686868"
+                    android:hint=" Confirm password!! "
+                    android:inputType="textPassword"
+                    android:maxLength="20"
+                    android:textColorHint="@color/white"
+                    android:textSize="40dp" />
 
-            <TextView
-                android:id="@+id/already_have_an_account"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:layout_margin="20dp"
-                android:textSize="30sp"
-                android:text="Already have an account"/>
-        </LinearLayout>
+                <Button
+                    android:id="@+id/register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="Register Now"
+                    android:textSize="30sp" />
 
-    </RelativeLayout>
+                <TextView
+                    android:id="@+id/already_have_an_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:background="#48009688"
+                    android:text=" Already have an account? "
+                    android:textColor="@color/white"
+                    android:textSize="30sp" />
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
