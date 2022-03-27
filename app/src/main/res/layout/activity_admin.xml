@@ -18,41 +18,44 @@
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
             android:text="Administration system"
-            android:textSize="50sp"
-            android:textStyle="bold" />
+            android:textSize="80sp"
+            android:textColor="@color/white"
+            android:textStyle="italic" />
 
-        <TextView
+        <Button
             android:id="@+id/Update_Availability"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/Admin_system"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="100dp"
-            android:text="Update Availability"
-            android:textColor="@color/purple_700"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/record"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@id/Update_Availability"
-            android:layout_centerHorizontal="true"
-            android:text="Record"
-            android:textColor="@color/teal_700"
-            android:textSize="50sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:id="@+id/Set_Occupancy_Limit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/record"
-            android:layout_centerHorizontal="true"
+            android:layout_marginTop="200dp"
+            android:layout_marginLeft="100sp"
             android:text="Set Occupancy Limit"
-            android:textColor="#FFC107"
-            android:textSize="50sp"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/print_database"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="350dp"
+            android:layout_marginLeft="100sp"
+            android:text="Print User Database"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Print_timerecord"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="500dp"
+            android:layout_marginLeft="100sp"
+            android:text="Print Checkin and Checkout Time Record"
+            android:textColor="@color/white"
+            android:textSize="25sp"
             android:textStyle="bold" />
 
         <Button
