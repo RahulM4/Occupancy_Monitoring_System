@@ -25,6 +25,48 @@
         android:textColor="@color/white"
         android:textStyle="bold"/>
 
+    <TextView
+        android:id="@+id/query2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/query2"
+        android:textSize="50sp"
+        android:layout_marginTop="300sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="italic"/>
 
+    <TextView
+        android:id="@+id/mobilenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/mobile"
+        android:textSize="80sp"
+        android:layout_marginTop="400sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/query3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/query3"
+        android:textSize="50sp"
+        android:layout_marginTop="520sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="italic"/>
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/email"
+        android:textSize="60sp"
+        android:layout_marginTop="630sp"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
 
 </RelativeLayout>

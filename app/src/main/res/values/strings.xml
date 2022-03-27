@@ -8,4 +8,8 @@
     <string name="occupancy_status">Occupancy Status</string>
     <string name="update">Update Details</string>
     <string name="query1">For any query or assistance:</string>
+    <string name="query2">Kindly reach to us by:</string>
+    <string name="mobile">Mobile No.: 8955263880</string>
+    <string name="query3">or by contacting us to given email id</string>
+    <string name="email">Email id: rahulrps447@gmail.com</string>
 </resources>
