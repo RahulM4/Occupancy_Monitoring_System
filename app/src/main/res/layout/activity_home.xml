@@ -14,16 +14,16 @@
 
     </RelativeLayout>
 
-
     <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
+        android:id="@+id/title_name"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:text="@string/indian_institute_of_information_allahabad"
-        android:textColor="#0066B6"
-        android:textSize="40sp" />
-
+        android:textColor="@color/white"
+        android:textSize="50sp"
+        android:textStyle="bold" />
     <Button
         android:id="@+id/enter"
         android:layout_width="wrap_content"
@@ -48,40 +48,51 @@
         android:text="@string/admin"
         android:textSize="25sp" />
 
+    <TextView
+        android:id="@+id/date_time"
+        android:text="Date and time"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
     <Button
+        android:layout_alignParentRight="true"
         android:id="@+id/help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
-        android:layout_margin="50sp"
         android:text="@string/help"
         android:textSize="25sp" />
-
-    <Button
-        android:id="@+id/Date_time"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="50dp"
-        android:text="@string/date_time"
-        android:textSize="25sp" />
     <TextView
-        android:id="@+id/Occupy"
+        android:id="@+id/occupy_status"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:textSize="40sp"
-        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/title_name"
         android:layout_marginTop="100dp"
-        android:background="#F034496E"
+        android:textStyle="bold"
+        android:textSize="50sp"
+        android:background="#512196F3"
         android:textColor="@color/white"
         android:text="@string/occupancy_status"/>
+    <TextView
+        android:id="@+id/available_filled"
+        android:text="Available/Filled"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/occupy_status"
+        android:layout_marginTop="40sp"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <TextView
+        android:id="@+id/available"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:text="Maximum capacity full "
-        android:textColor="#F40707"
-        android:textSize="50sp" />
-
+        android:layout_below="@+id/available_filled"
+        android:layout_marginLeft="50sp"
+        android:text="Availbale"
+        android:textColor="@color/white"
+        android:textSize="30sp" />
 </RelativeLayout>
