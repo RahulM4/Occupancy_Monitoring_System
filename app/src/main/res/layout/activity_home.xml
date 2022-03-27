@@ -43,14 +43,14 @@
         android:text="@string/update"
         android:textSize="25sp"
         android:layout_marginTop="550sp"
-        android:layout_marginRight="150sp"
+        android:layout_marginRight="150sp"/>
 
     <Button
         android:id="@+id/admin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="20dp"
@@ -116,6 +116,6 @@
         android:layout_marginRight="120sp"
         android:text="Available Seats:"
         android:textColor="@color/white"
-        android:textSize="30sp"
+        android:textSize="30sp"/>
 
 </RelativeLayout>
