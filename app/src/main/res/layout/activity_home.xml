@@ -24,23 +24,32 @@
         android:textColor="@color/white"
         android:textSize="50sp"
         android:textStyle="bold" />
+
     <Button
         android:id="@+id/enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="150sp"
+        android:layout_marginTop="550sp"
         android:text="@string/Enter"
         android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/updatecredentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/update"
+        android:textSize="25sp"
+        android:layout_marginTop="550sp"
+        android:layout_marginRight="150sp"
 
     <Button
         android:id="@+id/admin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"
@@ -74,25 +83,39 @@
         android:background="#512196F3"
         android:textColor="@color/white"
         android:text="@string/occupancy_status"/>
-    <TextView
-        android:id="@+id/available_filled"
-        android:text="Available/Filled"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/occupy_status"
-        android:layout_marginTop="40sp"
-        android:textStyle="bold"
-        android:textSize="40sp"
-        android:textColor="@color/white"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
 
     <TextView
-        android:id="@+id/available"
+        android:id="@+id/available_filled"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/available_filled"
-        android:layout_marginLeft="50sp"
-        android:text="Availbale"
+        android:layout_below="@id/occupy_status"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40sp"
+        android:text="Available/Filled"
+        android:textColor="@color/white"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/maxcapacity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="80sp"
+        android:layout_marginTop="400sp"
+        android:text="Max. Capacity:"
         android:textColor="@color/white"
         android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/availableseats"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="400sp"
+        android:layout_marginRight="120sp"
+        android:text="Available Seats:"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+
 </RelativeLayout>

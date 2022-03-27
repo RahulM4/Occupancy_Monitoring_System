@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">OMS</string>
     <string name="indian_institute_of_information_allahabad">Wel-come to IIIT Allahabad!</string>
-    <string name="Enter">Enter</string>
-    <string name="admin">Admin</string>
+    <string name="Enter">Sign In</string>
+    <string name="admin">Admin Login</string>
     <string name="help">Help?</string>
     <string name="date_time">Date/time</string>
     <string name="occupancy_status">Occupancy Status</string>
+    <string name="update">Update Details</string>
 </resources>
