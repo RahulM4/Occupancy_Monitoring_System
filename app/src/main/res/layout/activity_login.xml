@@ -18,6 +18,7 @@
         android:text="Login here"
         android:textColor="@color/white"
         android:textSize="60sp" />
+
     <androidx.cardview.widget.CardView
         android:layout_width="500dp"
         android:layout_height="650dp"
@@ -30,6 +31,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/R_title"
             android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
             android:layout_marginTop="100dp"
             android:orientation="vertical">
 
@@ -96,9 +98,6 @@
                 android:textSize="30sp" />
         </LinearLayout>
 
-
     </androidx.cardview.widget.CardView>
-
-
 
 </RelativeLayout>

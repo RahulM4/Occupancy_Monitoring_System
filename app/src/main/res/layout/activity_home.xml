@@ -59,16 +59,17 @@
 
     <TextView
         android:id="@+id/date_time"
-        android:text="Date and time"
+        android:text="@string/date_and_time"
         android:textSize="30sp"
         android:textColor="@color/white"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"/>
+
     <Button
-        android:layout_alignParentRight="true"
         android:id="@+id/help"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
         android:text="@string/help"
         android:textSize="25sp" />
     <TextView
@@ -91,7 +92,7 @@
         android:layout_below="@id/occupy_status"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40sp"
-        android:text="Available/Filled"
+        android:text="@string/available_filled"
         android:textColor="@color/white"
         android:textSize="40sp"
         android:textStyle="bold" />
@@ -103,7 +104,7 @@
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="120sp"
         android:layout_marginTop="400sp"
-        android:text="Max. Capacity:"
+        android:text="@string/max_capacity"
         android:textColor="@color/white"
         android:textSize="30sp" />
 
@@ -114,7 +115,7 @@
         android:layout_alignParentRight="true"
         android:layout_marginTop="400sp"
         android:layout_marginRight="120sp"
-        android:text="Available Seats:"
+        android:text="@string/available_seats"
         android:textColor="@color/white"
         android:textSize="30sp"/>
 

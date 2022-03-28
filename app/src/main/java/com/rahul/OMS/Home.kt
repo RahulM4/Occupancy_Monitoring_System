@@ -23,6 +23,11 @@ class Home : AppCompatActivity() {
             startActivity(i);
 
         }
+        help.setOnClickListener()
+        {
+            val i =Intent(this@Home,Help::class.java)
+            startActivity(i)
+        }
 
 
 

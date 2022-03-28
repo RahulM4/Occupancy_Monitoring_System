@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OMS">
         <activity
-            android:name=".help"
+            android:name=".Help"
             android:exported="false" />
         <activity
             android:name=".MobileotpVerification"

@@ -20,101 +20,130 @@
             android:textColor="@color/white"
             android:textSize="60sp" />
 
-        <androidx.cardview.widget.CardView
-            android:layout_width="500dp"
-            android:layout_height="650dp"
-            android:layout_below="@id/R_title"
-            android:layout_centerHorizontal="true"
-            app:cardBackgroundColor="#F1D907">
+    <androidx.cardview.widget.CardView
+        android:layout_width="500dp"
+        android:layout_height="650dp"
+        android:layout_below="@id/R_title"
+        android:layout_centerHorizontal="true"
+        app:cardBackgroundColor="#F1D907">
 
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/R_title"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+
+            android:orientation="vertical">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:boxCornerRadiusTopStart="20dp">
+
+                <EditText
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#686868"
+                    android:hint="Full name"
+                    android:inputType="textPersonName"
+                    android:maxLength="40"
+                    android:textSize="30sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:boxCornerRadiusTopStart="20dp">
+
+                <EditText
+                    android:id="@+id/input_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#686868"
+                    android:hint="Enter IIITA email ID"
+                    android:inputType="textEmailAddress"
+                    android:textSize="30sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:boxCornerRadiusTopStart="20dp">
+
+                <EditText
+                    android:id="@+id/input_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#686868"
+                    android:hint="Enter mobile number"
+                    android:inputType="phone"
+                    android:textSize="30sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:boxCornerRadiusTopStart="20dp">
+
+                <EditText
+                    android:id="@+id/input_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#686868"
+                    android:hint="Password"
+                    android:inputType="textPassword"
+                    android:textSize="30sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                app:boxCornerRadiusTopStart="20dp">
+
+                <EditText
+                    android:id="@+id/input_confirm_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#686868"
+                    android:hint="confirm password"
+                    android:inputType="textEmailAddress"
+                    android:textSize="30sp" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/R_title"
-                android:layout_centerInParent="true"
-                android:orientation="vertical">
+                android:layout_margin="20dp"
+                android:text="Register Now"
+                android:textSize="30sp" />
 
-                <EditText
-                    android:id="@+id/name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:background="#686868"
-                    android:hint=" Enter your name here "
-                    android:inputType="textPersonName"
-                    android:maxLines="1"
-                    android:textColorHint="@color/white"
-                    android:textSize="40dp" />
-
-                <EditText
-                    android:id="@+id/email"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:background="#686868"
-                    android:hint=" Enter your IITA email only "
-                    android:inputType="textEmailAddress"
-                    android:maxLines="1"
-                    android:textColorHint="@color/white"
-                    android:textSize="40dp" />
-
-                <EditText
-                    android:id="@+id/mobile"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:background="#686868"
-                    android:hint=" Enter your mobile here "
-                    android:inputType="phone"
-                    android:maxLength="10"
-                    android:textColorHint="@color/white"
-                    android:textSize="40dp" />
-
-                <EditText
-                    android:id="@+id/password"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:background="#686868"
-                    android:hint=" Choose password! "
-                    android:inputType="textPassword"
-                    android:maxLength="20"
-                    android:textColorHint="@color/white"
-                    android:textSize="40dp" />
-
-                <EditText
-                    android:id="@+id/confirm_password"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:background="#686868"
-                    android:hint=" Confirm password!! "
-                    android:inputType="textPassword"
-                    android:maxLength="20"
-                    android:textColorHint="@color/white"
-                    android:textSize="40dp" />
-
-                <Button
-                    android:id="@+id/register"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:text="Register Now"
-                    android:textSize="30sp" />
-
-                <TextView
-                    android:id="@+id/already_have_an_account"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:background="#48009688"
-                    android:text=" Already have an account? "
-                    android:textColor="@color/white"
-                    android:textSize="30sp" />
-            </LinearLayout>
+            <TextView
+                android:id="@+id/already_have_an_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="#48009688"
+                android:text=" Already have an account? "
+                android:textColor="@color/white"
+                android:textSize="30sp" />
+        </LinearLayout>
 
 
-        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
