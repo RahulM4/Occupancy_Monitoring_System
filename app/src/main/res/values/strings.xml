@@ -4,7 +4,7 @@
     <string name="Enter">Sign In</string>
     <string name="admin">Admin Login</string>
     <string name="help">Help</string>
-    <string name="date_time">Date/time</string>
+    <string name="date_time">00:00:00</string>
     <string name="occupancy_status">Occupancy Status</string>
     <string name="update">Update Details</string>
     <string name="query1">For any query or assistance</string>
@@ -15,5 +15,5 @@
     <string name="max_capacity">Max. Capacity:</string>
     <string name="available_filled">Available/Filled</string>
     <string name="available_seats">Available Seats:</string>
-    <string name="date_and_time">Date and time</string>
+
 </resources>

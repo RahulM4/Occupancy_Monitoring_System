@@ -5,14 +5,14 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 
-class MainActivity : AppCompatActivity() {
+class SplaceScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_splace_screen)
 
         Handler().postDelayed(
             {
-                val i = Intent(this@MainActivity, Home::class.java)
+                val i = Intent(this@SplaceScreen, Home::class.java)
                 startActivity(i)
                 finish()
             }, 2000)

@@ -59,7 +59,7 @@
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/admin_forgot"
+            android:id="@+id/admin_logout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"

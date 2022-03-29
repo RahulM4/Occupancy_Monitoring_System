@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "909562921554",
+    "project_id": "omslogin-2d34d",
+    "storage_bucket": "omslogin-2d34d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:909562921554:android:b071bc1654b2d23797558b",
+        "android_client_info": {
+          "package_name": "com.rahul.OMS"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "909562921554-m0rjs0ae1pc9qbkco12dcr2gvp3ne6bo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.rahul.OMS",
+            "certificate_hash": "095bdeb61f497d46f814ef2587e2dd122197aec8"
+          }
+        },
+        {
+          "client_id": "909562921554-ag1orrb92fqgvhfueqsff0j9l27remju.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBhWXNf2cJnRabhm4vzjE6HMDZdBSVtSe4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "909562921554-ag1orrb92fqgvhfueqsff0j9l27remju.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

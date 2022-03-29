@@ -30,11 +30,20 @@
         android:layout_height="60dp"
         android:layout_below="@+id/admin_login_page_title"
         android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
         android:layout_marginTop="200sp"
-        android:background="#524C7C77"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/editext_background"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
         android:hint="Email ID"
+        android:padding="10dp"
+        android:maxLength="50"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="30sp" />
+        android:textSize="25sp" />
 
     <EditText
         android:id="@+id/admin_password"
@@ -43,20 +52,44 @@
         android:layout_below="@+id/admin_email"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50sp"
-        android:background="#524F7E79"
+        android:background="@drawable/editext_background"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="10dp"
         android:hint="Password"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColor="@color/white"
         android:textColorHint="@color/white"
-        android:textSize="30sp" />
+        android:textSize="25sp" />
 
-    <Button
-        android:id="@+id/admin_login_btn"
+    <LinearLayout
+        android:layout_below="@+id/admin_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="650sp"
-        android:text="login"
-        android:textSize="40sp" />
+        android:layout_marginTop="50dp"
 
+        >
+        <Button
+            android:id="@+id/admin_login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="login"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_background"
+            android:textSize="30sp" />
+        <Button
+            android:id="@+id/admin_clear_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/btn_background"
+            android:textSize="30sp"
+            android:text="Clear"/>
+    </LinearLayout>
 
 
 </RelativeLayout>

@@ -10,7 +10,7 @@ class Admin : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin)
 
-        admin_forgot.setOnClickListener()
+        admin_logout.setOnClickListener()
         {
             val i = Intent(this@Admin,Home::class.java)
             startActivity(i)
