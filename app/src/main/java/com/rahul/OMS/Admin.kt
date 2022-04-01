@@ -21,5 +21,6 @@ class Admin : AppCompatActivity() {
         {
             max_capacity
         }
+
     }
 }
