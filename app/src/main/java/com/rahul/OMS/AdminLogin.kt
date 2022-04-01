@@ -46,7 +46,7 @@ class AdminLogin : AppCompatActivity() {
 
         if(email.isNotEmpty() && password.isNotEmpty())
         {
-            user.createUserWithEmailAndPassword(email,password).addOnCompleteListener(AdminLogin())
+            /*user.createUserWithEmailAndPassword(email,password).addOnCompleteListener(AdminLogin())
             { task->
                 if(task.isSuccessful)
                 {
@@ -58,12 +58,22 @@ class AdminLogin : AppCompatActivity() {
                 {
                     Toast.makeText(this,task.exception!!.message,Toast.LENGTH_SHORT).show()
                 }
+            }*/
+            if(email.equals("abcd@gmail.com")&& password.equals("1111abcd"))
+            {
+                Toast.makeText(this,"Successfully Logged In",Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this@AdminLogin,Admin::class.java))
+                finish()
+            }
+            else
+            {
+                Toast.makeText(this,"Wrong EmailId or Password",Toast.LENGTH_LONG).show()
             }
 
         }
         else
         {
-            Toast.makeText(this,"Login Failed",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Please enter some credentials to LogIn",Toast.LENGTH_SHORT).show()
         }
     }
 
