@@ -4,10 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8612314A"
+    android:background="@drawable/iiit"
     tools:context=".Register">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D3201E1E">
 
+    </RelativeLayout>
 
         <TextView
             android:id="@+id/R_title"
@@ -20,131 +25,74 @@
             android:textColor="@color/white"
             android:textSize="60sp" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="600dp"
-        android:layout_height="750dp"
-        android:layout_below="@id/R_title"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        app:cardBackgroundColor="#F1D907">
-
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/R_title"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center_horizontal"
-
-            android:orientation="vertical">
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                app:boxCornerRadiusTopStart="20dp">
 
                 <EditText
                     android:id="@+id/input_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/editext_background"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
-                    android:drawablePadding="20dp"
-                    android:hint="Full name"
+                    android:layout_width="600sp"
+                    android:layout_height="50sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="200sp"
+                    android:background="#686868"
+                    android:hint="Full Name"
                     android:inputType="textPersonName"
-                    android:maxLength="40"
-                    android:padding="10dp"
-                    android:textSize="25sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                app:boxCornerRadiusTopStart="20dp">
-
-                <EditText
-                    android:id="@+id/input_email"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/editext_background"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
-                    android:drawablePadding="20dp"
-                    android:hint="Enter IIITA email ID"
-                    android:inputType="textEmailAddress"
-                    android:padding="10dp"
-                    android:textSize="30sp" />
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                app:boxCornerRadiusTopStart="20dp">
-
-                <EditText
-                    android:id="@+id/input_mobile"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/editext_background"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
-                    android:drawablePadding="20dp"
-                    android:hint="Enter mobile number"
-                    android:inputType="phone"
-                    android:padding="10dp"
-                    android:textSize="30sp" />
-            </com.google.android.material.textfield.TextInputLayout>
+                    android:textColorHint="@color/white"
+                    android:textSize="40dp" />
 
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                app:boxCornerRadiusTopStart="20dp">
+    <EditText
+        android:id="@+id/input_mobile"
+        android:layout_width="600sp"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300sp"
+        android:background="#686868"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:textColorHint="@color/white"
+        android:textSize="40dp" />
 
-                <EditText
-                    android:id="@+id/input_password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/editext_background"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
-                    android:drawablePadding="20dp"
-                    android:hint="Password"
-                    android:inputType="textPassword"
-                    android:padding="10dp"
-                    android:textSize="30sp" />
-            </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:id="@+id/input_email"
+        android:layout_width="600sp"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="400sp"
+        android:background="#686868"
+        android:hint="Enter IIITA Email Id"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/white"
+        android:textSize="40dp" />
 
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
-                app:boxCornerRadiusTopStart="20dp">
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="600sp"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="500sp"
+        android:background="#686868"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:textSize="40dp" />
 
-                <EditText
-                    android:id="@+id/input_confirm_password"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/editext_background"
-                    android:drawableStart="@drawable/ic_baseline_person_24"
-                    android:drawablePadding="20dp"
-                    android:hint="confirm password"
-                    android:inputType="textEmailAddress"
-                    android:padding="10dp"
-                    android:textSize="30sp" />
-            </com.google.android.material.textfield.TextInputLayout>
+    <EditText
+        android:id="@+id/input_confirm_password"
+        android:layout_width="600sp"
+        android:layout_height="50sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600sp"
+        android:background="#686868"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textColorHint="@color/white"
+        android:textSize="40dp" />
 
             <Button
                 android:id="@+id/register"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="750sp"
                 android:background="@drawable/btn_background"
                 android:text="Register Now"
                 android:textSize="30sp" />
@@ -153,15 +101,12 @@
                 android:id="@+id/already_have_an_account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:background="@drawable/editext_background"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="880sp"
                 android:text=" Already have an account? "
                 android:textColor="@color/white"
                 android:textSize="30sp" />
 
 
-        </LinearLayout>
-
-
-    </androidx.cardview.widget.CardView>
 
 </RelativeLayout>
