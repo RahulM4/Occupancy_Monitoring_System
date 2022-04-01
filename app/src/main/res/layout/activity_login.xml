@@ -19,7 +19,7 @@
         android:id="@+id/R_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="40dp"
         android:gravity="center_horizontal"
         android:text="Login here"
         android:textColor="@color/white"
@@ -31,7 +31,7 @@
                 android:layout_width="600sp"
                 android:layout_height="60sp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="300sp"
+                android:layout_marginTop="200sp"
                 android:background="#686868"
                 android:hint=" Enter your Email Id"
                 android:inputType="textEmailAddress"
@@ -44,7 +44,7 @@
                 android:layout_width="600sp"
                 android:layout_height="60sp"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="400sp"
+                android:layout_marginTop="300sp"
                 android:background="#686868"
                 android:hint=" Enter password! "
                 android:inputType="textPassword"
@@ -57,7 +57,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
-                    android:layout_marginTop="600sp"
+                    android:layout_marginTop="500sp"
                     android:text="login"
                     android:textSize="30sp" />
 
@@ -66,8 +66,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:layout_marginTop="475sp"
-                    android:layout_marginRight="90sp"
+                    android:layout_marginTop="375sp"
+                    android:layout_marginRight="300sp"
                     android:text="Forgot password?"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
@@ -76,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="700sp"
+        android:layout_marginTop="550sp"
         android:text="OR"
         android:textColor="@color/white"
         android:textSize="40sp" />
@@ -85,7 +85,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_centerHorizontal="true"
-                android:layout_marginTop="775sp"
+                android:layout_marginTop="600sp"
                 android:text="If you are new user,Click on"
                 android:textColor="@color/white"
                 android:textSize="30sp" />
@@ -95,7 +95,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="850sp"
+        android:layout_marginTop="675sp"
         android:text="New User/Guest"
         android:textColor="@color/white"
         android:textSize="25sp" />
