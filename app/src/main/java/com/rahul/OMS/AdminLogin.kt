@@ -22,6 +22,7 @@ class AdminLogin : AppCompatActivity() {
             performLogin()
 
 
+
         }
         admin_clear_btn.setOnClickListener()
         {
@@ -47,8 +48,7 @@ class AdminLogin : AppCompatActivity() {
                 {
                     Toast.makeText(this,"Successfully Logged In",Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this@AdminLogin,Admin::class.java))
-                    finish()
-                }
+                    finish          }
                 else
                 {
                     Toast.makeText(this,task.exception!!.message,Toast.LENGTH_SHORT).show()
@@ -63,12 +63,14 @@ class AdminLogin : AppCompatActivity() {
             else
             {
                 Toast.makeText(this,"Wrong EmailId or Password",Toast.LENGTH_LONG).show()
+
             }
 
         }
         else
         {
             Toast.makeText(this,"Please enter some credentials to LogIn",Toast.LENGTH_SHORT).show()
+
         }
     }
 

@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.OMS">
         <activity
+            android:name=".PopUpWindow"
+            android:exported="false" />
+        <activity
             android:name=".Help"
             android:exported="false" />
         <activity
