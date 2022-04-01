@@ -151,16 +151,6 @@
         android:textColor="@color/white"
         android:textSize="30sp"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/Numerical"
-        android:layout_marginTop="400sp"
-        android:layout_marginLeft="320sp"
-        android:text=" "
-        android:textColor="@color/white"
-        android:textSize="30sp"/>
-
 
 
 

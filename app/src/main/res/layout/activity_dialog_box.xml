@@ -46,6 +46,6 @@
             android:textColor="#ffffff"
             android:textSize="18sp"
             android:layout_weight="1"
-            android:id="@+id/btn_okay"/>
+            android:id="@+id/btn_ok"/>
     </LinearLayout>
 </LinearLayout>

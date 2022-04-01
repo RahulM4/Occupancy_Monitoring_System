@@ -9,12 +9,6 @@ import java.util.*
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
-
-        lateinit var calendar: Calendar
-        lateinit var simpleDateFormat: SimpleDateFormat
-        lateinit var date: Date
-
-
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
@@ -36,6 +30,14 @@ class Home : AppCompatActivity() {
             val i =Intent(this@Home,Help::class.java)
             startActivity(i)
         }
+
+        val intent = getIntent()
+        val limit = intent.getIntExtra("limit",0)
+        max_capacity.text="Max. Capcity: " + limit
+
+
+
+
 
 
 
