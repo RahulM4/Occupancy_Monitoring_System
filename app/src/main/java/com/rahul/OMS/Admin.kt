@@ -19,7 +19,7 @@ class Admin : AppCompatActivity() {
 
         Update_Availability.setOnClickListener()
         {
-            max_capacity
+            startActivity(Intent(this@Admin,DialogBox::class.java))
         }
 
     }
