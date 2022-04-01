@@ -30,7 +30,6 @@ class AdminLogin : AppCompatActivity() {
         admin_clear_btn.setOnClickListener()
         {
             admin_email.text.clear()
-            admin_password.text.clear()
 
         }
 

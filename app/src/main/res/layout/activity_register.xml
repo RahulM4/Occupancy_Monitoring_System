@@ -21,10 +21,11 @@
             android:textSize="60sp" />
 
     <androidx.cardview.widget.CardView
-        android:layout_width="500dp"
-        android:layout_height="650dp"
+        android:layout_width="600dp"
+        android:layout_height="750dp"
         android:layout_below="@id/R_title"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         app:cardBackgroundColor="#F1D907">
 
 
@@ -48,11 +49,14 @@
                     android:id="@+id/input_name"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#686868"
+                    android:background="@drawable/editext_background"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="20dp"
                     android:hint="Full name"
                     android:inputType="textPersonName"
                     android:maxLength="40"
-                    android:textSize="30sp" />
+                    android:padding="10dp"
+                    android:textSize="25sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
             <com.google.android.material.textfield.TextInputLayout
@@ -66,9 +70,12 @@
                     android:id="@+id/input_email"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#686868"
+                    android:background="@drawable/editext_background"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="20dp"
                     android:hint="Enter IIITA email ID"
                     android:inputType="textEmailAddress"
+                    android:padding="10dp"
                     android:textSize="30sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -83,9 +90,12 @@
                     android:id="@+id/input_mobile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#686868"
+                    android:background="@drawable/editext_background"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="20dp"
                     android:hint="Enter mobile number"
                     android:inputType="phone"
+                    android:padding="10dp"
                     android:textSize="30sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -101,9 +111,12 @@
                     android:id="@+id/input_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#686868"
+                    android:background="@drawable/editext_background"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="20dp"
                     android:hint="Password"
                     android:inputType="textPassword"
+                    android:padding="10dp"
                     android:textSize="30sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -118,9 +131,12 @@
                     android:id="@+id/input_confirm_password"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:background="#686868"
+                    android:background="@drawable/editext_background"
+                    android:drawableStart="@drawable/ic_baseline_person_24"
+                    android:drawablePadding="20dp"
                     android:hint="confirm password"
                     android:inputType="textEmailAddress"
+                    android:padding="10dp"
                     android:textSize="30sp" />
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -129,6 +145,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
+                android:background="@drawable/btn_background"
                 android:text="Register Now"
                 android:textSize="30sp" />
 
@@ -136,11 +153,12 @@
                 android:id="@+id/already_have_an_account"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="#48009688"
+                android:background="@drawable/editext_background"
                 android:text=" Already have an account? "
                 android:textColor="@color/white"
                 android:textSize="30sp" />
+
+
         </LinearLayout>
 
 

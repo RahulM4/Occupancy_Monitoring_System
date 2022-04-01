@@ -68,6 +68,7 @@
             android:layout_height="wrap_content"
             android:format12Hour="hh:mm::ss"
             android:text="@string/date_time"
+            android:layout_marginLeft="10dp"
             android:textColor="@color/white"
             android:textSize="40sp" />
         <TextClock
@@ -75,7 +76,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:format12Hour="a"
-            android:layout_marginLeft="20dp"
+            android:layout_marginLeft="10dp"
             android:text="hh:mm:ss"
             android:textColor="@color/white"
             android:textSize="30sp" />
@@ -87,7 +88,7 @@
         android:format12Hour="MMM dd, yyyy"
         android:layout_below="@+id/linearlayout1"
         android:text="hh:mm:ss"
-        android:layout_marginLeft="10dp"
+        android:layout_marginLeft="15dp"
         android:textColor="@color/white"
         android:textSize="30sp" />
 
