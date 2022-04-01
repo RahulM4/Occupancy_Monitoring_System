@@ -7,18 +7,14 @@ import android.text.Editable
 import android.text.TextUtils
 import android.widget.EditText
 import android.widget.Toast
-import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.ktx.Firebase
 import kotlinx.android.synthetic.main.activity_admin_login.*
 import kotlinx.android.synthetic.main.activity_home.*
 
 class AdminLogin : AppCompatActivity() {
     //private lateinit var binding: AdminLogin
-    private lateinit var user: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_login)
-        user = FirebaseAuth.getInstance()
 
 
         admin_login_btn.setOnClickListener()
