@@ -4,8 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8612314A"
+    android:background="@drawable/building"
     tools:context=".Register">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D3201E1E">
+
+    </RelativeLayout>
 
 
     <TextView
@@ -13,47 +20,31 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="60dp"
-        android:background="#655F5F"
         android:gravity="center_horizontal"
         android:text="Login here"
         android:textColor="@color/white"
         android:textSize="60sp" />
 
-    <androidx.cardview.widget.CardView
-        android:layout_width="500dp"
-        android:layout_height="650dp"
-        android:layout_below="@id/R_title"
-        android:layout_centerHorizontal="true"
-        app:cardBackgroundColor="#F1D907">
 
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/R_title"
-            android:layout_centerInParent="true"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="100dp"
-            android:orientation="vertical">
-
-
-            <EditText
+          <EditText
                 android:id="@+id/email"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_width="600sp"
+                android:layout_height="60sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="300sp"
                 android:background="#686868"
-                android:hint=" Enter your mobile No."
-                android:inputType="phone"
-                android:maxLength="10"
+                android:hint=" Enter your Email Id"
+                android:inputType="textEmailAddress"
                 android:textColorHint="@color/white"
                 android:textSize="40dp" />
 
 
             <EditText
                 android:id="@+id/password"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="20dp"
+                android:layout_width="600sp"
+                android:layout_height="60sp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="400sp"
                 android:background="#686868"
                 android:hint=" Enter password! "
                 android:inputType="textPassword"
@@ -61,16 +52,12 @@
                 android:textSize="40dp" />
 
 
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
                 <Button
                     android:id="@+id/login"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="600sp"
                     android:text="login"
                     android:textSize="30sp" />
 
@@ -78,26 +65,39 @@
                     android:id="@+id/forget_password"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_margin="20dp"
-                    android:background="#FF0606"
-                    android:text="Forgot password"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="475sp"
+                    android:layout_marginRight="90sp"
+                    android:text="Forgot password?"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
-            </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="700sp"
+        android:text="OR"
+        android:textColor="@color/white"
+        android:textSize="40sp" />
 
-
-            <TextView
-                android:id="@+id/new_user_guest"
+              <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="20dp"
-                android:background="#74018786"
-                android:text="New User/guest"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="775sp"
+                android:text="If you are new user,Click on"
                 android:textColor="@color/white"
                 android:textSize="30sp" />
-        </LinearLayout>
 
-    </androidx.cardview.widget.CardView>
+    <Button
+        android:id="@+id/new_user_guest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="850sp"
+        android:text="New User/Guest"
+        android:textColor="@color/white"
+        android:textSize="25sp" />
 
 </RelativeLayout>

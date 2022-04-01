@@ -33,7 +33,7 @@ class Home : AppCompatActivity() {
 
         val intent = getIntent()
         val limit = intent.getIntExtra("limit",0)
-        max_capacity.text="Max. Capcity: " + limit
+        max_capacity.text="Max. Capacity: " + limit
 
 
 
