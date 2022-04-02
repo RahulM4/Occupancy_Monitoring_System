@@ -4,11 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8612314A"
+    android:background="@drawable/iiit"
     tools:context=".MobileotpVerification">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#D3201E1E">
+
+    </RelativeLayout>
+
     <TextView
-        android:id="@+id/title_forget"
+        android:id="@+id/title_forget_verification"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="40dp"
@@ -20,48 +27,67 @@
         android:textStyle="bold" />
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="600dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
+            android:layout_below="@id/title_forget_verification"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
             android:orientation="vertical">
 
             <EditText
                 android:id="@+id/mobile_for_verification"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="#792B2323"
-                android:hint="Enter your mobile number"
+                android:textColor="@color/white"
+                android:drawableStart="@drawable/ic_baseline_phone_android_24"
+                android:padding="10dp"
+                android:drawablePadding="20dp"
+                android:textColorHint="@color/white"
+                android:background="@drawable/et_text_background"
+                android:hint="Mobile number"
                 android:inputType="phone"
                 android:maxLength="10"
                 android:textSize="40sp" />
 
             <EditText
                 android:id="@+id/otp_filled"
-                android:layout_width="wrap_content"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
-                android:background="#792B2323"
-                android:hint="Enter otp sent"
+                android:textColorHint="@color/white"
+                android:textColor="@color/white"
+                android:drawablePadding="20dp"
+                android:padding="10dp"
+                android:drawableStart="@drawable/ic_baseline_sms_24"
+                android:background="@drawable/et_text_background"
+                android:hint=" Enter otp "
                 android:textSize="40sp" />
-
-
-            <Button
-                android:id="@+id/get_otp"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="600dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Get otp"
-                android:textSize="30sp" />
-
-
-            <Button
-                android:id="@+id/confirm_otp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:text="Confirm"
-                android:textSize="30sp" />
+                android:orientation="horizontal"
+                android:layout_marginTop="40dp">
+                <Button
+                    android:id="@+id/get_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/btn_background"
+                    android:text="Get otp"
+                    android:textSize="30sp" />
+                <Button
+                    android:id="@+id/confirm_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:text="Confirm"
+                    android:background="@drawable/btn_background"
+                    android:textSize="30sp" />
+            </LinearLayout>
         </LinearLayout>
 
 </RelativeLayout>
