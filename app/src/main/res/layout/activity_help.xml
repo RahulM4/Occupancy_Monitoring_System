@@ -20,7 +20,7 @@
         android:layout_height="wrap_content"
         android:text="@string/query1"
         android:textSize="50sp"
-        android:layout_marginTop="160sp"
+        android:layout_marginTop="100dp"
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"
         android:textStyle="bold"/>
@@ -29,34 +29,34 @@
         android:id="@+id/query2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/query2"
-        android:textSize="50sp"
-        android:layout_marginTop="300sp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:text="@string/query2"
         android:textColor="@color/white"
-        android:textStyle="italic"/>
+        android:textSize="50sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/mobilenum"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/mobile"
-        android:textSize="80sp"
-        android:layout_marginTop="400sp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="400dp"
+        android:text="@string/mobile"
         android:textColor="@color/white"
-        android:textStyle="bold"/>
+        android:textSize="80sp"
+        android:textStyle="bold" />
 
     <TextView
         android:id="@+id/query3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/query3"
-        android:textSize="50sp"
-        android:layout_marginTop="520sp"
         android:layout_centerHorizontal="true"
+        android:layout_marginTop="500dp"
+        android:text="@string/query3"
         android:textColor="@color/white"
-        android:textStyle="italic"/>
+        android:textSize="50sp"
+        android:textStyle="italic" />
 
     <TextView
         android:id="@+id/email"
@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:text="@string/email"
         android:textSize="60sp"
-        android:layout_marginTop="630sp"
+        android:layout_marginTop="600dp"
         android:layout_centerHorizontal="true"
         android:textColor="@color/white"
         android:textStyle="bold"/>

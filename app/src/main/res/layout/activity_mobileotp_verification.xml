@@ -31,16 +31,18 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:orientation="vertical">
+
             <EditText
                 android:id="@+id/mobile_for_verification"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
                 android:background="#792B2323"
                 android:hint="Enter your mobile number"
                 android:inputType="phone"
                 android:maxLength="10"
-                android:layout_marginTop="20dp"
                 android:textSize="40sp" />
+
             <EditText
                 android:id="@+id/otp_filled"
                 android:layout_width="wrap_content"
@@ -62,13 +64,12 @@
 
             <Button
                 android:id="@+id/confirm_otp"
-                android:text="Confirm"
-                android:textSize="30sp"
-                android:layout_marginTop="20dp"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Confirm"
+                android:textSize="30sp" />
         </LinearLayout>
-
 
 
     </androidx.cardview.widget.CardView>

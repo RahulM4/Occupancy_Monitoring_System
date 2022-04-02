@@ -14,12 +14,13 @@
 
         <TextView
             android:id="@+id/Admin_system"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
+            android:gravity="center"
             android:text="Administration system"
-            android:textSize="80sp"
             android:textColor="@color/white"
+            android:textSize="80sp"
+            android:background="@drawable/et_text_background"
             android:textStyle="italic" />
 
         <Button
@@ -27,7 +28,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginLeft="100sp"
             android:layout_marginTop="200dp"
             android:text="Set Occupancy Limit"
             android:textColor="@color/white"
@@ -39,21 +39,21 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="350dp"
-            android:layout_marginLeft="100sp"
+            android:layout_marginTop="60dp"
+            android:layout_below="@+id/Update_Availability"
             android:text="Print User Database"
             android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/Print_timerecord"
+            android:id="@+id/Print_time_record"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="500dp"
-            android:layout_marginLeft="100sp"
-            android:text="Print Checkin and Checkout Time Record"
+            android:layout_marginTop="60dp"
+            android:layout_below="@id/print_database"
+            android:text="Print Check_in and Check_out Time Record"
             android:textColor="@color/white"
             android:textSize="25sp"
             android:textStyle="bold" />
@@ -69,7 +69,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginBottom="20dp"
             android:text="Logout->"
-            android:textSize="20sp" />
+            android:textSize="25sp" />
 
     </RelativeLayout>
 

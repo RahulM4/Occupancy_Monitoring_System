@@ -8,7 +8,6 @@
         <entry key="..\:/Users/dhira/Downloads/Occupancy_Monitoring_System/app/src/main/res/drawable/ic_launcher_background.xml" value="0.188" />
         <entry key="..\:/Users/dhira/Downloads/Occupancy_Monitoring_System/app/src/main/res/layout/activity_admin.xml" value="0.1" />
         <entry key="..\:/Users/dhira/Downloads/Occupancy_Monitoring_System/app/src/main/res/layout/activity_admin_login.xml" value="0.1" />
-        <entry key="..\:/Users/dhira/Downloads/Occupancy_Monitoring_System/app/src/main/res/layout/activity_dialog_box.xml" value="0.1" />
         <entry key="..\:/Users/dhira/Downloads/Occupancy_Monitoring_System/app/src/main/res/layout/activity_help.xml" value="0.1" />
         <entry key="..\:/Users/dhira/Downloads/Occupancy_Monitoring_System/app/src/main/res/layout/activity_home.xml" value="0.1" />
         <entry key="..\:/Users/dhira/Downloads/Occupancy_Monitoring_System/app/src/main/res/layout/activity_login.xml" value="0.1" />
@@ -23,9 +22,16 @@
         <entry key="..\:/Users/rahul/AndroidStudioProjects/OMS/app/src/main/res/layout/activity_main.xml" value="0.176" />
         <entry key="..\:/Users/rahul/AndroidStudioProjects/OMS/app/src/main/res/layout/activity_mobileotp_verification.xml" value="0.125" />
         <entry key="..\:/Users/rahul/AndroidStudioProjects/OMS/app/src/main/res/layout/activity_register.xml" value="0.125" />
+        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/drawable/editext_background.xml" value="0.2445" />
         <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_admin.xml" value="0.1" />
+        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_admin_login.xml" value="0.1" />
         <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_dialog_box.xml" value="0.125" />
         <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_help.xml" value="0.125" />
+        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_login.xml" value="0.11200000000000002" />
+        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_mobileotp_verification.xml" value="0.125" />
+        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/activity_splace_screen.xml" value="0.125" />
         <entry key="..\:/Users/rahul/AndroidStudioProjects/Occupancy_Monitoring_System/app/src/main/res/layout/custom_dialog.xml" value="0.125" />
       </map>
     </option>

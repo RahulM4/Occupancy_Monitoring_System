@@ -22,81 +22,97 @@
         android:layout_marginTop="40dp"
         android:gravity="center_horizontal"
         android:text="Login here"
+        android:background="@drawable/et_text_background"
         android:textColor="@color/white"
         android:textSize="60sp" />
 
 
-          <EditText
-                android:id="@+id/email"
-                android:layout_width="600sp"
-                android:layout_height="60sp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="200sp"
-                android:background="#686868"
-                android:hint=" Enter your Email Id"
-                android:inputType="textEmailAddress"
-                android:textColorHint="@color/white"
-                android:textSize="40dp" />
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:layout_below="@+id/R_title"
+        android:background="@drawable/et_text_background"
+        android:drawableStart="@drawable/ic_baseline_email_24"
+        android:drawablePadding="20dp"
+        android:hint=" Enter your Email Id"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="40sp" />
 
 
-            <EditText
-                android:id="@+id/password"
-                android:layout_width="600sp"
-                android:layout_height="60sp"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="300sp"
-                android:background="#686868"
-                android:hint=" Enter password! "
-                android:inputType="textPassword"
-                android:textColorHint="@color/white"
-                android:textSize="40dp" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="600dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/et_text_background"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:drawablePadding="20dp"
+        android:hint=" Enter password! "
+        android:inputType="textPassword"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="40sp" />
 
 
-                <Button
-                    android:id="@+id/login"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="500sp"
-                    android:text="login"
-                    android:textSize="30sp" />
+    <TextView
+        android:id="@+id/forget_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/password"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="340dp"
+        android:background="@drawable/et_text_background"
+        android:text=" Forgot password? "
+        android:textColor="@color/white"
+        android:textSize="40sp" />
 
-                <TextView
-                    android:id="@+id/forget_password"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="375sp"
-                    android:layout_marginRight="300sp"
-                    android:text="Forgot password?"
-                    android:textColor="@color/white"
-                    android:textSize="30sp" />
+    <Button
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/forget_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/btn_background"
+        android:text="login"
+        android:textSize="30sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        android:layout_below="@+id/login"
+        android:background="@color/white"
+        android:layout_marginTop="40dp"/>
+
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/login"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="550sp"
-        android:text="OR"
+        android:layout_marginTop="80dp"
+        android:text="If you are new user, Click on"
         android:textColor="@color/white"
-        android:textSize="40sp" />
-
-              <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="600sp"
-                android:text="If you are new user,Click on"
-                android:textColor="@color/white"
-                android:textSize="30sp" />
+        android:textSize="30sp" />
 
     <Button
         android:id="@+id/new_user_guest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="675sp"
+        android:background="@drawable/btn_background"
+        android:layout_marginTop="150dp"
         android:text="New User/Guest"
+        android:layout_below="@+id/login"
         android:textColor="@color/white"
         android:textSize="25sp" />
 
