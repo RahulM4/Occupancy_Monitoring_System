@@ -21,7 +21,7 @@
         android:layout_marginTop="40dp"
         android:background="@drawable/et_text_background"
         android:gravity="center_horizontal"
-        android:text="Enter credential to forget password"
+        android:text="OTP - based Authentication  "
         android:textColor="@color/white"
         android:textSize="60sp"
         android:textStyle="bold" />
