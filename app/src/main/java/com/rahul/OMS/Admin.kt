@@ -13,7 +13,7 @@ class Admin : AppCompatActivity() {
 
         admin_logout.setOnClickListener()
         {
-            startActivity(Intent(this@Admin,Home::class.java))
+            startActivity(Intent(this@Admin,AdminLogin::class.java))
         }
 
 

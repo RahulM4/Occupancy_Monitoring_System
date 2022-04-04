@@ -27,7 +27,7 @@ class AdminLogin : AppCompatActivity() {
         admin_clear_btn.setOnClickListener()
         {
             admin_email.text.clear()
-
+            admin_password.text.clear()
         }
 
 
@@ -69,7 +69,7 @@ class AdminLogin : AppCompatActivity() {
         }
         else
         {
-            Toast.makeText(this,"Please enter some credentials to LogIn",Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Please enter all required details to LogIn",Toast.LENGTH_SHORT).show()
 
         }
     }

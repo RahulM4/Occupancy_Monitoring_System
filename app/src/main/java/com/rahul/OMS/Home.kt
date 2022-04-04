@@ -14,6 +14,12 @@ class Home : AppCompatActivity() {
 
         enter.setOnClickListener()
         {
+            val i= Intent(this@Home,Login::class.java)
+            startActivity(i);
+
+        }
+        registration.setOnClickListener()
+        {
             val i= Intent(this@Home,Register::class.java)
             startActivity(i);
 
