@@ -12,5 +12,5 @@ dependencyResolutionManagement {
         mavenCentral()
     }
 }
-rootProject.name = "OMS"
+rootProject.name = "oms"
 include ':app'
