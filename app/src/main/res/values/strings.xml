@@ -1,12 +1,10 @@
 <resources>
-    <string name="app_name">OMS</string>
+    <string name="app_name">oms</string>
     <string name="indian_institute_of_information_allahabad">Wel-come to IIIT Allahabad!</string>
-    <string name="Enter">Sign In</string>
     <string name="admin">Admin Login</string>
     <string name="help">Help</string>
     <string name="date_time">00:00:00</string>
     <string name="occupancy_status">Occupancy Status</string>
-    <string name="registration">Sign Up</string>
     <string name="query1">For any query or assistance</string>
     <string name="query2">Kindly reach to us by</string>
     <string name="mobile">Mobile No: 8955263880</string>
@@ -15,5 +13,7 @@
     <string name="max_capacity">Max. Capacity:</string>
     <string name="available_filled">Available/Filled</string>
     <string name="available_seats">Available Seats:</string>
+    <string name="sign_in">sign in</string>
+    <string name="sign_up">sign up</string>
 
 </resources>

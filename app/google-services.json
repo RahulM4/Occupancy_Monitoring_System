@@ -9,7 +9,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:909562921554:android:b071bc1654b2d23797558b",
         "android_client_info": {
-          "package_name": "com.rahul.OMS"
+          "package_name": "com.rahul.oms"
         }
       },
       "oauth_client": [
@@ -17,7 +17,7 @@
           "client_id": "909562921554-m0rjs0ae1pc9qbkco12dcr2gvp3ne6bo.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.rahul.OMS",
+            "package_name": "com.rahul.oms",
             "certificate_hash": "095bdeb61f497d46f814ef2587e2dd122197aec8"
           }
         },
