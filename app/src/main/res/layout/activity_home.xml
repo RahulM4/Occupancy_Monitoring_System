@@ -26,27 +26,26 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/sign_in"
+        android:id="@+id/enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@id/max_capacity"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="150dp"
         android:layout_marginTop="80dp"
-        android:text="@string/sign_in"
+        android:text="@string/Enter"
         android:textSize="25sp" />
 
     <Button
-        android:id="@+id/sign_up"
+        android:id="@+id/registration"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/availableseats"
         android:layout_alignParentRight="true"
         android:layout_marginTop="80dp"
         android:layout_marginRight="150dp"
-        android:text="@string/sign_up"
+        android:text="@string/registration"
         android:textSize="25sp" />
-
 
     <Button
         android:id="@+id/admin"

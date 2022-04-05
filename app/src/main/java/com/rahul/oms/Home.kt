@@ -11,23 +11,23 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        sign_in.setOnClickListener()
+        enter.setOnClickListener()
         {
             val i= Intent(this@Home,Login::class.java)
-            startActivity(i)
+            startActivity(i);
 
         }
-        sign_up.setOnClickListener()
+        registration.setOnClickListener()
         {
             val i= Intent(this@Home,Register::class.java)
-            startActivity(i)
+            startActivity(i);
 
         }
 
         admin.setOnClickListener()
         {
             val i= Intent(this@Home,AdminLogin::class.java)
-            startActivity(i)
+            startActivity(i);
 
         }
         help.setOnClickListener()
@@ -37,7 +37,7 @@ class Home : AppCompatActivity() {
         }
 
         val intent = getIntent()
-        val limit = intent.getIntExtra("limit",500)
+        val limit = intent.getIntExtra("limit",0)
         max_capacity.text="Max. Capacity: " + limit
 
 
