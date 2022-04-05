@@ -4,13 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
-import com.rahul.oms.R
-
 import kotlinx.android.synthetic.main.activity_admin_login.*
-import kotlinx.android.synthetic.main.activity_home.*
+
 
 class AdminLogin : AppCompatActivity() {
-    //private lateinit var binding: AdminLogin
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_admin_login)

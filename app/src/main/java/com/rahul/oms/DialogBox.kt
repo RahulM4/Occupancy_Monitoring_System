@@ -3,7 +3,6 @@ package com.rahul.oms
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.rahul.oms.R
 import kotlinx.android.synthetic.main.activity_admin_login.*
 import kotlinx.android.synthetic.main.activity_dialog_box.*
 
@@ -21,7 +20,7 @@ class DialogBox : AppCompatActivity() {
         btn_ok.setOnClickListener()
         {
             var limit=txt_input.text.toString().toInt()
-            val i = Intent(this@DialogBox,Home::class.java)
+            val i = Intent(this@DialogBox,DisplayHome::class.java)
             i.putExtra("limit",limit)
             startActivity(i)
         }

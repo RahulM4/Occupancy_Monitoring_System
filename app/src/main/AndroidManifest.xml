@@ -12,29 +12,31 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.oms">
         <activity
-            android:name="com.rahul.oms.DialogBox"
+            android:name=".DisplayHome"
+            android:exported="false" />
+        <activity
+            android:name=".DialogBox"
+            android:exported="false" />
+        <activity
+            android:name=".Help"
+            android:exported="false" />
+        <activity
+            android:name=".MobileotpVerification"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLogin"
+            android:exported="false" />
+        <activity
+            android:name=".Admin"
+            android:exported="false" />
+        <activity
+            android:name=".Register"
             android:exported="false" />
 
+        <activity android:name=".Login"
+            android:exported="false"/>
         <activity
-            android:name="com.rahul.oms.Help"
-            android:exported="false" />
-        <activity
-            android:name="com.rahul.oms.MobileotpVerification"
-            android:exported="false" />
-        <activity
-            android:name="com.rahul.oms.AdminLogin"
-            android:exported="false" />
-        <activity
-            android:name="com.rahul.oms.Admin"
-            android:exported="false" />
-        <activity
-            android:name="com.rahul.oms.Register"
-            android:exported="false" />
-        <activity
-            android:name="com.rahul.oms.Home"
-            android:exported="false" />
-        <activity
-            android:name="com.rahul.oms.SplaceScreen"
+            android:name=".SplaceScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

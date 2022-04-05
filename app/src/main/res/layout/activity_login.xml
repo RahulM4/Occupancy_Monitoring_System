@@ -54,7 +54,7 @@
         android:background="@drawable/et_text_background"
         android:drawableStart="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"
-        android:hint=" Enter password! "
+        android:hint="Enter password"
         android:inputType="textPassword"
         android:padding="10dp"
         android:textColorHint="@color/white"
@@ -70,7 +70,7 @@
         android:layout_marginTop="20dp"
         android:layout_marginRight="340dp"
         android:background="@drawable/et_text_background"
-        android:text=" Forgot password? "
+        android:text="Forgot password"
         android:textColor="@color/white"
         android:textSize="40sp" />
 
@@ -108,11 +108,11 @@
         android:id="@+id/new_user_guest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:background="@drawable/btn_background"
-        android:layout_marginTop="150dp"
-        android:text="New User/Guest"
         android:layout_below="@+id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/btn_background"
+        android:text="New User or Guest"
         android:textColor="@color/white"
         android:textSize="25sp" />
 
