@@ -12,7 +12,7 @@ class Home : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home)
 
-        enter.setOnClickListener()
+        signin1.setOnClickListener()
         {
             val i= Intent(this@Home,Login::class.java)
             startActivity(i);
