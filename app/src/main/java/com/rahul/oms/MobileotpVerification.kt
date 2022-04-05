@@ -2,7 +2,7 @@ package com.rahul.oms
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.rahul.OMS.R
+import com.rahul.oms.R
 
 
 class MobileotpVerification : AppCompatActivity() {
