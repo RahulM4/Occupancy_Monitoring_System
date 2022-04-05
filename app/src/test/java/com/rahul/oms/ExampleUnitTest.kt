@@ -1,4 +1,4 @@
-package com.rahul.OMS
+package com.rahul.oms
 
 import org.junit.Test
 

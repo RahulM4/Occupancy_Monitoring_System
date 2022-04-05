@@ -1,4 +1,4 @@
-package com.rahul.OMS
+package com.rahul.oms
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
