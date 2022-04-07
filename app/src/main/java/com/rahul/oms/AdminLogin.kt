@@ -14,17 +14,10 @@ class AdminLogin : AppCompatActivity() {
         setContentView(R.layout.activity_admin_login)
 
 
-        admin_login_btn.setOnClickListener()
+        login_btn_admin_login.setOnClickListener()
         {
             performLogin()
 
-
-
-        }
-        admin_clear_btn.setOnClickListener()
-        {
-            admin_email.text.clear()
-            admin_password.text.clear()
         }
 
 
@@ -34,23 +27,12 @@ class AdminLogin : AppCompatActivity() {
 
     private fun performLogin() {
 
-        val email = admin_email.text.toString()
-        val password = admin_password.text.toString()
+        val email = email_admin_login.text.toString()
+        val password = password_admin_login.text.toString()
 
         if(email.isNotEmpty() && password.isNotEmpty())
         {
-            /*user.createUserWithEmailAndPassword(email,password).addOnCompleteListener(AdminLogin())
-            { task->
-                if(task.isSuccessful)
-                {
-                    Toast.makeText(this,"Successfully Logged In",Toast.LENGTH_SHORT).show()
-                    startActivity(Intent(this@AdminLogin,Admin::class.java))
-                    finish          }
-                else
-                {
-                    Toast.makeText(this,task.exception!!.message,Toast.LENGTH_SHORT).show()
-                }
-            }*/
+
             if(email.equals("abcd@gmail.com")&& password.equals("1111abcd"))
             {
                 Toast.makeText(this,"Successfully Logged In",Toast.LENGTH_SHORT).show()

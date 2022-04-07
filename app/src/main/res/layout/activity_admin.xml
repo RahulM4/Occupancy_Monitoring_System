@@ -10,56 +10,86 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#D0000000">
+        android:background="#D00C0C0C">
 
         <TextView
             android:id="@+id/Admin_system"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/et_text_background"
             android:gravity="center"
             android:text="Administration system"
             android:textColor="@color/white"
-            android:textSize="80sp"
-            android:background="@drawable/et_text_background"
+            android:textSize="60sp"
             android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/name_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Admin_system"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/et_text_background"
+            android:text="Admin"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/id_admin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Admin_system"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@id/name_admin"
+            android:background="@drawable/et_text_background"
+
+            android:text="ID"
+            android:textColor="@color/white"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
 
         <Button
             android:id="@+id/Update_Availability"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerHorizontal="true"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="350dp"
             android:text="Set Occupancy Limit"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
+
 
         <Button
             android:id="@+id/print_database"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/Update_Availability"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="60dp"
-            android:layout_below="@+id/Update_Availability"
             android:text="Print User Database"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/Print_time_record"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@id/print_database"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="60dp"
-            android:layout_below="@id/print_database"
             android:text="Print Check_in and Check_out Time Record"
             android:textColor="@color/white"
-            android:textSize="25sp"
+            android:textSize="20sp"
             android:textStyle="bold" />
 
         <Button
-            android:id="@+id/admin_logout"
+            android:id="@+id/logout_admin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentRight="true"

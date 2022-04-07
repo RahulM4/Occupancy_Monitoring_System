@@ -21,66 +21,88 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/et_text_background"
         android:gravity="center_horizontal"
-        android:text=" Register yourself "
+        android:text="Create an Account "
         android:textColor="@color/white"
         android:textSize="60sp" />
 
 
     <EditText
-
-        android:id="@+id/input_name"
-        android:layout_width="600dp"
+        android:id="@+id/name_register"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:layout_below="@+id/R_title"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="100dp"
         android:background="@drawable/et_text_background"
         android:drawableStart="@drawable/ic_baseline_person_24"
         android:drawablePadding="20dp"
         android:hint="Full Name"
         android:inputType="textPersonName"
+        android:maxLength="20"
+        android:maxLines="1"
         android:padding="10dp"
         android:textColorHint="@color/white"
-        android:textSize="40sp" />
-
-
+        android:textSize="25sp" />
     <EditText
-        android:id="@+id/input_mobile"
-        android:layout_width="600dp"
+        android:id="@+id/enrollment_number_register"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/name_register"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/et_text_background"
-        android:hint="Mobile Number"
-        android:layout_below="@+id/input_name"
-        android:padding="10dp"
+        android:drawableStart="@drawable/ic_baseline_person_24"
         android:drawablePadding="20dp"
-        android:inputType="phone"
-        android:drawableStart="@drawable/ic_baseline_phone_android_24"
+        android:hint="Enrollment Number"
+        android:inputType="textPersonName"
+        android:maxLength="20"
+        android:maxLines="1"
+        android:padding="10dp"
         android:textColorHint="@color/white"
-        android:textSize="40sp" />
+        android:textSize="25sp" />
+
 
     <EditText
-        android:id="@+id/input_email"
-        android:layout_width="600dp"
+        android:id="@+id/mobile_register"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
+        android:layout_below="@+id/enrollment_number_register"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
-        android:layout_below="@+id/input_mobile"
+        android:background="@drawable/et_text_background"
+        android:drawableStart="@drawable/ic_baseline_phone_android_24"
+        android:drawablePadding="20dp"
+        android:hint="Mobile Number"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="10dp"
+        android:textColorHint="@color/white"
+        android:textSize="25sp" />
+
+    <EditText
+        android:id="@+id/email_register"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mobile_register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
         android:background="@drawable/et_text_background"
         android:drawableStart="@drawable/ic_baseline_email_24"
         android:drawablePadding="20dp"
         android:hint="Enter IIITA Email Id"
         android:inputType="textEmailAddress"
+        android:maxLength="40"
+        android:maxLines="1"
         android:padding="10dp"
         android:textColorHint="@color/white"
-        android:textSize="40sp" />
+        android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/input_password"
-        android:layout_width="600dp"
+        android:id="@+id/password_register"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_email"
+        android:layout_below="@id/email_register"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/et_text_background"
@@ -88,15 +110,17 @@
         android:drawablePadding="20dp"
         android:hint="Password"
         android:inputType="textPassword"
+        android:maxLength="20"
+        android:maxLines="1"
         android:padding="10dp"
         android:textColorHint="@color/white"
-        android:textSize="40sp" />
+        android:textSize="25sp" />
 
     <EditText
-        android:id="@+id/input_confirm_password"
-        android:layout_width="600dp"
+        android:id="@+id/confirm_password_register"
+        android:layout_width="350dp"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_password"
+        android:layout_below="@id/password_register"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/et_text_background"
@@ -104,38 +128,41 @@
         android:drawablePadding="20dp"
         android:hint="Confirm Password"
         android:inputType="textPassword"
+        android:maxLength="20"
+        android:maxLines="1"
         android:padding="10dp"
         android:textColorHint="@color/white"
-        android:textSize="40sp" />
+        android:textSize="25sp" />
 
     <Button
-        android:id="@+id/register_btn"
+        android:id="@+id/btn_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/input_confirm_password"
+        android:layout_below="@id/confirm_password_register"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="40dp"
         android:background="@drawable/btn_background"
         android:text="Register Now"
-        android:textSize="35sp" />
+        android:textSize="25sp" />
     <View
+        android:id="@+id/view"
         android:layout_width="match_parent"
         android:layout_height="8dp"
-        android:layout_below="@+id/register_btn"
+        android:layout_below="@+id/btn_register"
         android:background="@color/white"
         android:layout_marginTop="20dp"/>
 
     <TextView
-        android:id="@+id/already_have_an_account"
+        android:id="@+id/already_have_an_account_register"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_below="@id/view"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:layout_below="@id/register_btn"
         android:background="@drawable/et_text_background"
         android:text=" Already have an account? "
         android:textColor="@color/white"
-        android:textSize="35sp" />
+        android:textSize="30sp" />
 
 
 

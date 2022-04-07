@@ -26,6 +26,11 @@ class DisplayHome : AppCompatActivity() {
         {
             startActivity(Intent(this,Register::class.java))
         }
+       val intent =getIntent()
+        val limit =intent.getIntExtra("limit",400)
+        max_capacity.text="Max. capacity: "+limit
+        available_seats.text="Available seats: "+ limit
+
 
 
     }
