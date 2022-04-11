@@ -20,7 +20,7 @@
             android:gravity="center"
             android:text="Administration system"
             android:textColor="@color/white"
-            android:textSize="60sp"
+            android:textSize="40sp"
             android:textStyle="italic" />
 
         <TextView

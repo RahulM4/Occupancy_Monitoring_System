@@ -23,6 +23,7 @@ class DatabaseManagament : AppCompatActivity() {
 
         auth = FirebaseAuth.getInstance()
         checkUser()
+
         binding.logoutBtnDashboard.setOnClickListener{
             auth.signOut()
             startActivity(Intent(this,DisplayHome::class.java))

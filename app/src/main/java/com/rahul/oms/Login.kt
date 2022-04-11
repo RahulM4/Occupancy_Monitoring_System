@@ -26,16 +26,17 @@ class Login : AppCompatActivity() {
         binding= ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-
         auth = FirebaseAuth.getInstance()
+
         progressDailog= ProgressDialog(this)
         progressDailog.setTitle("Please wait while logging....")
         progressDailog.setCanceledOnTouchOutside(false)
 
         binding.newUserGuestLogin.setOnClickListener{
-            startActivity(Intent(this,DatabaseManagament::class.java))
+            startActivity(Intent(this,Register::class.java))
         }
 
+        // Handle login button clicks
         binding.loginBtnLogin.setOnClickListener{
 
             validateData()
@@ -44,6 +45,7 @@ class Login : AppCompatActivity() {
 
 
 
+        //To reset password through otp
         forget_password_login.setOnClickListener()
         {
             startActivity(Intent(this@Login,MobileotpVerification::class.java))
@@ -95,7 +97,6 @@ class Login : AppCompatActivity() {
 
     private fun checkingUser() {
         progressDailog.setMessage("Finding user....")
-
         val firebaseUser = auth.currentUser!!
         val ref= FirebaseDatabase.getInstance().getReference("Users")
         ref.child(firebaseUser.uid)
@@ -111,7 +112,7 @@ class Login : AppCompatActivity() {
                     }
                     else if(userType == "admin")
                     {
-                       startActivity(Intent(this@Login,DatabaseManagament::class.java))
+                       startActivity(Intent(this@Login,Admin::class.java))
                         finish()
                     }
 

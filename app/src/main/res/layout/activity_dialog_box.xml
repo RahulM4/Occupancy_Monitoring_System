@@ -13,7 +13,7 @@
         android:text="Only Enter Numerical Value Here"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="55sp" />
+        android:textSize="30sp" />
 
     <LinearLayout
         android:id="@+id/linearlayout_dialog"
@@ -35,7 +35,7 @@
             android:background="@drawable/et_text_background"
             android:gravity="center"
             android:hint="Enter the maximum capacity"
-            android:textSize="50sp" />
+            android:textSize="25sp" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -48,17 +48,14 @@
                 android:id="@+id/btn_cancel"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:background="@drawable/btn_background"
                 android:text="Cancel"
                 android:textColor="#ffffff"
                 android:textSize="18sp" />
-
             <Button
                 android:id="@+id/btn_ok"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:background="@drawable/btn_background"
                 android:text="Ok"
                 android:textColor="#ffffff"

@@ -23,7 +23,7 @@
         android:gravity="center_horizontal"
         android:text="Create an Account "
         android:textColor="@color/white"
-        android:textSize="60sp" />
+        android:textSize="30sp" />
 
 
     <EditText
@@ -42,7 +42,8 @@
         android:maxLines="1"
         android:padding="10dp"
         android:textColorHint="@color/white"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
+
     <EditText
         android:id="@+id/enrollment_number_register"
         android:layout_width="350dp"
@@ -51,7 +52,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="20dp"
         android:background="@drawable/et_text_background"
-        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawableStart="@drawable/ic_id_card_24"
         android:drawablePadding="20dp"
         android:hint="Enrollment Number"
         android:inputType="textPersonName"
@@ -59,7 +60,7 @@
         android:maxLines="1"
         android:padding="10dp"
         android:textColorHint="@color/white"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
 
 
     <EditText
@@ -78,7 +79,7 @@
         android:maxLines="1"
         android:padding="10dp"
         android:textColorHint="@color/white"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/email_register"
@@ -96,7 +97,7 @@
         android:maxLines="1"
         android:padding="10dp"
         android:textColorHint="@color/white"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/password_register"
@@ -114,7 +115,7 @@
         android:maxLines="1"
         android:padding="10dp"
         android:textColorHint="@color/white"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
 
     <EditText
         android:id="@+id/confirm_password_register"
@@ -132,7 +133,7 @@
         android:maxLines="1"
         android:padding="10dp"
         android:textColorHint="@color/white"
-        android:textSize="25sp" />
+        android:textSize="20sp" />
 
     <Button
         android:id="@+id/btn_register"
@@ -143,7 +144,7 @@
         android:layout_marginTop="40dp"
         android:background="@drawable/btn_background"
         android:text="Register Now"
-        android:textSize="25sp" />
+        android:textSize="15sp" />
     <View
         android:id="@+id/view"
         android:layout_width="match_parent"
@@ -162,7 +163,7 @@
         android:background="@drawable/et_text_background"
         android:text=" Already have an account? "
         android:textColor="@color/white"
-        android:textSize="30sp" />
+        android:textSize="20sp" />
 
 
 

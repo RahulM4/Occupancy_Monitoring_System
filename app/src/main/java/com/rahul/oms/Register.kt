@@ -70,11 +70,11 @@ class Register : AppCompatActivity() {
     private fun validateData() {
 
         name=binding.nameRegister.text.toString().trim()
-        enrollment=binding.nameRegister.text.toString().trim()
-        email=binding.nameRegister.text.toString().trim()
-        mobile=binding.nameRegister.text.toString().trim()
-        password=binding.nameRegister.text.toString().trim()
-        val confirmPassword=binding.nameRegister.text.toString().trim()
+        enrollment=binding.enrollmentNumberRegister.text.toString().trim()
+        email=binding.emailRegister.text.toString().trim()
+        mobile=binding.mobileRegister.text.toString().trim()
+        password=binding.passwordRegister.text.toString().trim()
+        val confirmPassword=binding.confirmPasswordRegister.text.toString().trim()
         //val emailPattern = "/[a-z0-9]+@(iiita.ac.in)/gm"
 
         if(name.isEmpty())
@@ -115,7 +115,7 @@ class Register : AppCompatActivity() {
     private fun createUserAccount()
     {
         //show progress
-        progressDialog.setMessage("Creating An Account....")
+        progressDialog.setMessage("Creating an Account....")
         progressDialog.show()
         //crate an account
         auth.createUserWithEmailAndPassword(email,password)
@@ -131,24 +131,22 @@ class Register : AppCompatActivity() {
     }
     private fun updateUserInfo()
     {
-        progressDialog.setMessage("Loading info....")
+        progressDialog.setMessage("Loading user info....")
         val timestamp = System.currentTimeMillis()
         val uid = auth.uid
 
         val hashMap : HashMap<String ,Any?> = HashMap()
         hashMap["uid"] = uid
-        hashMap["email"]= email
         hashMap["name"] =name
         hashMap["enrollment"]= enrollment
+        hashMap["email"]= email
         hashMap["mobile"] =mobile
         hashMap["profileImage"]= ""
         hashMap["userType"] ="user"
         hashMap["timestamp"] = timestamp
 
         val ref = FirebaseDatabase.getInstance().getReference("Users")
-        ref.child(uid!!)
-            .setValue(hashMap)
-            .addOnCompleteListener{
+        ref.child(uid!!).setValue(hashMap).addOnCompleteListener{
                 progressDialog.dismiss()
                 Toast.makeText(this,"Account created",Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this,DatabaseManagament::class.java))
@@ -156,7 +154,7 @@ class Register : AppCompatActivity() {
             }
             .addOnFailureListener {e->
                 progressDialog.dismiss()
-                Toast.makeText(this,"Failed to save info  ${e.message}",Toast.LENGTH_SHORT).show()
+                Toast.makeText(this,"Failed to save user info  ${e.message}",Toast.LENGTH_SHORT).show()
 
             }
 
