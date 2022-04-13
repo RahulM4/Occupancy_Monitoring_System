@@ -4,17 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.google.firebase.auth.FirebaseAuth
-import com.rahul.oms.databinding.ActivityAdminBinding
-import kotlinx.android.synthetic.main.activity_admin.*
+import com.rahul.oms.databinding.ActivityAdminDashboardBinding
+import kotlinx.android.synthetic.main.activity_admin_dashboard.*
 
 
-class Admin : AppCompatActivity() {
-    private lateinit var binding: ActivityAdminBinding
+class AdminDashboard : AppCompatActivity() {
+    private lateinit var binding: ActivityAdminDashboardBinding
     private lateinit var auth : FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityAdminBinding.inflate(layoutInflater)
+        binding = ActivityAdminDashboardBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // initialize objects
@@ -23,14 +23,14 @@ class Admin : AppCompatActivity() {
 
         logout_admin.setOnClickListener()
         {
-            startActivity(Intent(this@Admin,AdminLogin::class.java))
+            startActivity(Intent(this@AdminDashboard,AdminLogin::class.java))
             auth.signOut()
             checkingUser()
         }
 
         Update_Availability.setOnClickListener()
         {
-            startActivity(Intent(this@Admin,DialogBox::class.java))
+            startActivity(Intent(this@AdminDashboard,SetOccupancyLimit::class.java))
             finish()
         }
 
@@ -40,7 +40,7 @@ class Admin : AppCompatActivity() {
         val firebaseUser= auth.currentUser
         if(firebaseUser == null)
         {
-            startActivity(Intent(this@Admin,DisplayHome::class.java))
+            startActivity(Intent(this@AdminDashboard,Home::class.java))
             finish()
 
         }

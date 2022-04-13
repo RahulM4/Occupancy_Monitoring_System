@@ -13,34 +13,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
         <activity
-            android:name=".DatabaseManagament"
+            android:name=".UserDashboard"
             android:exported="false" />
         <activity
-            android:name=".DisplayHome"
+            android:name=".Home"
             android:exported="false" />
         <activity
-            android:name=".DialogBox"
+            android:name=".SetOccupancyLimit"
             android:exported="false" />
         <activity
             android:name=".Help"
             android:exported="false" />
         <activity
-            android:name=".MobileotpVerification"
+            android:name=".ResetPassword"
             android:exported="false" />
         <activity
             android:name=".AdminLogin"
             android:exported="false" />
         <activity
-            android:name=".Admin"
+            android:name=".AdminDashboard"
             android:exported="false" />
         <activity
-            android:name=".Register"
+            android:name=".UserRegister"
             android:exported="false" />
         <activity
-            android:name=".Login"
+            android:name=".UserLogin"
             android:exported="false" />
         <activity
-            android:name=".SplaceScreen"
+            android:name=".SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

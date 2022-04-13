@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_display_home.*
 
-class DisplayHome : AppCompatActivity() {
+class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_display_home)
@@ -20,11 +20,11 @@ class DisplayHome : AppCompatActivity() {
         }
         sign_in.setOnClickListener()
         {
-            startActivity(Intent(this,Login::class.java))
+            startActivity(Intent(this,UserLogin::class.java))
         }
         sign_up.setOnClickListener()
         {
-            startActivity(Intent(this,Register::class.java))
+            startActivity(Intent(this,UserRegister::class.java))
         }
        val intent =getIntent()
         val limit =intent.getIntExtra("limit",400)

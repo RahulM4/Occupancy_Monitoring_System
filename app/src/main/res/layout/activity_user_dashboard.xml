@@ -5,23 +5,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DatabaseManagament">
+    tools:context=".UserDashboard">
 
     <RelativeLayout
         android:id="@+id/toolbarRelativeLayout"
         android:layout_width="match_parent"
         android:background="@drawable/btn_background"
         android:layout_height="?actionBarSize">
+
+        <TextView
+            android:id="@+id/hi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text=" Hi, "
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_toLeftOf="@+id/user_dashboard"
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/user_dashboard"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:layout_marginTop="10dp"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="Rahul"
             android:textColor="@color/white"
             android:textSize="20sp"
-            android:text="Hi, Rahul"/>
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/sub_title_dashboard"
             android:layout_width="wrap_content"

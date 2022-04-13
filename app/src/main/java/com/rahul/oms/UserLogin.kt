@@ -4,7 +4,6 @@ import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.provider.ContactsContract
 import android.util.Patterns
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
@@ -12,18 +11,19 @@ import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
-import com.rahul.oms.databinding.ActivityLoginBinding
-import kotlinx.android.synthetic.main.activity_login.*
+import com.rahul.oms.databinding.ActivityUserLoginBinding
+import kotlinx.android.synthetic.main.activity_user_login.*
 
-class Login : AppCompatActivity() {
-    private lateinit var binding: ActivityLoginBinding
+
+class UserLogin : AppCompatActivity() {
+    private lateinit var binding: ActivityUserLoginBinding
     private lateinit var auth: FirebaseAuth
     private lateinit var progressDailog: ProgressDialog
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding= ActivityLoginBinding.inflate(layoutInflater)
+        binding= ActivityUserLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         auth = FirebaseAuth.getInstance()
@@ -33,7 +33,7 @@ class Login : AppCompatActivity() {
         progressDailog.setCanceledOnTouchOutside(false)
 
         binding.newUserGuestLogin.setOnClickListener{
-            startActivity(Intent(this,Register::class.java))
+            startActivity(Intent(this,UserRegister::class.java))
         }
 
         // Handle login button clicks
@@ -48,7 +48,7 @@ class Login : AppCompatActivity() {
         //To reset password through otp
         forget_password_login.setOnClickListener()
         {
-            startActivity(Intent(this@Login,MobileotpVerification::class.java))
+            startActivity(Intent(this@UserLogin,ResetPassword::class.java))
         }
 
 
@@ -107,19 +107,19 @@ class Login : AppCompatActivity() {
                     val userType = snapshot.child("userType").value
                     if(userType =="user")
                     {
-                        startActivity(Intent(this@Login,DatabaseManagament::class.java))
+                        startActivity(Intent(this@UserLogin,UserDashboard::class.java))
                         finish()
                     }
                     else if(userType == "admin")
                     {
-                       startActivity(Intent(this@Login,Admin::class.java))
+                       startActivity(Intent(this@UserLogin,AdminDashboard::class.java))
                         finish()
                     }
 
                 }
 
                 override fun onCancelled(error: DatabaseError) {
-                    TODO("Not yet implemented")
+
                 }
             })
     }

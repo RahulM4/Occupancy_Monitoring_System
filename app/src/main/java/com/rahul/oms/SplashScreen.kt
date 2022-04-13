@@ -11,7 +11,7 @@ import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
 
-class SplaceScreen : AppCompatActivity() {
+class SplashScreen : AppCompatActivity() {
     private lateinit var auth: FirebaseAuth
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,7 +30,7 @@ class SplaceScreen : AppCompatActivity() {
         if(firebaseUser==null)
         {
 
-            startActivity(Intent(this@SplaceScreen, DisplayHome::class.java))
+            startActivity(Intent(this@SplashScreen, Home::class.java))
             finish()
         }
         else
@@ -43,12 +43,12 @@ class SplaceScreen : AppCompatActivity() {
                         val userType = snapshot.child("userType").value
                         if(userType =="user")
                         {
-                            startActivity(Intent(this@SplaceScreen,DatabaseManagament::class.java))
+                            startActivity(Intent(this@SplashScreen,UserDashboard::class.java))
                             finish()
                         }
                         else if(userType == "admin")
                         {
-                            startActivity(Intent(this@SplaceScreen,DatabaseManagament::class.java))
+                            startActivity(Intent(this@SplashScreen,UserDashboard::class.java))
                             finish()
                         }
 

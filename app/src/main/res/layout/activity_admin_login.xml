@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/splace_screen"
+    android:background="@drawable/splash_screen"
     tools:context=".AdminLogin">
 
     <RelativeLayout
@@ -26,12 +25,13 @@
 
     <EditText
         android:id="@+id/email_admin_login"
-        android:layout_width="650dp"
+        android:layout_width="400dp"
         android:layout_height="60dp"
         android:layout_below="@+id/admin_login_page_title"
         android:layout_centerHorizontal="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="200sp"
+        android:layout_marginTop="400sp"
+        android:autofillHints="emailAddress"
         android:layout_marginEnd="20dp"
         android:background="@drawable/et_text_background"
         android:drawableStart="@drawable/ic_baseline_email_24"
@@ -47,7 +47,7 @@
 
     <EditText
         android:id="@+id/password_admin_login"
-        android:layout_width="350dp"
+        android:layout_width="400dp"
         android:layout_height="60dp"
         android:layout_below="@+id/email_admin_login"
         android:layout_centerHorizontal="true"
@@ -55,6 +55,7 @@
         android:background="@drawable/et_text_background"
         android:drawableStart="@drawable/ic_baseline_lock_24"
         android:drawablePadding="10dp"
+        android:autofillHints="password"
         android:hint="Password"
         android:inputType="textPassword"
         android:maxLength="20"
@@ -64,24 +65,17 @@
         android:textColorHint="@color/white"
         android:textSize="25sp" />
 
-    <LinearLayout
-        android:layout_below="@+id/password_admin_login"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="50dp"
-
-        >
         <Button
             android:id="@+id/login_btn_admin_login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="login"
-            android:layout_marginRight="20dp"
+            android:layout_marginTop="100dp"
+            android:layout_below="@+id/password_admin_login"
+            android:layout_centerHorizontal="true"
             android:background="@drawable/btn_background"
             android:textSize="30sp" />
-    </LinearLayout>
+
 
 
 </RelativeLayout>

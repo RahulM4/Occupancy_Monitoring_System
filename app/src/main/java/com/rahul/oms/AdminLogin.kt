@@ -33,10 +33,10 @@ class AdminLogin : AppCompatActivity() {
         if(email.isNotEmpty() && password.isNotEmpty())
         {
 
-            if(email.equals("abcd@gmail.com")&& password.equals("1111abcd"))
+            if(email == "abcd@gmail.com" && password == "admin")
             {
                 Toast.makeText(this,"Successfully Logged In",Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this@AdminLogin,Admin::class.java))
+                startActivity(Intent(this@AdminLogin,AdminDashboard::class.java))
                 finish()
             }
             else

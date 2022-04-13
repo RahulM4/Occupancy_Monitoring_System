@@ -6,25 +6,24 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Patterns
 import android.widget.Toast
-import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
-import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
-import com.rahul.oms.databinding.ActivityRegisterBinding
-import kotlinx.android.synthetic.main.activity_register.*
+import com.rahul.oms.databinding.ActivityUserLoginBinding
+import com.rahul.oms.databinding.ActivityUserRegisterBinding
+import kotlinx.android.synthetic.main.activity_user_register.*
 
-class Register : AppCompatActivity() {
+class UserRegister : AppCompatActivity() {
 
     //fire base auth object
     private lateinit var auth: FirebaseAuth
     //view binding object
-    private lateinit var binding : ActivityRegisterBinding
+    private lateinit var binding : ActivityUserRegisterBinding
     //progress dialog
     private lateinit var progressDialog : ProgressDialog
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityRegisterBinding.inflate(layoutInflater)
+        binding = ActivityUserRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         // initialize fire auth
@@ -53,7 +52,7 @@ class Register : AppCompatActivity() {
 
         already_have_an_account_register.setOnClickListener()
         {
-            startActivity(Intent(this@Register, Login::class.java))
+            startActivity(Intent(this@UserRegister, UserLogin::class.java))
             finish()
         }
     }
@@ -149,7 +148,7 @@ class Register : AppCompatActivity() {
         ref.child(uid!!).setValue(hashMap).addOnCompleteListener{
                 progressDialog.dismiss()
                 Toast.makeText(this,"Account created",Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this,DatabaseManagament::class.java))
+                startActivity(Intent(this,UserDashboard::class.java))
                 finish()
             }
             .addOnFailureListener {e->

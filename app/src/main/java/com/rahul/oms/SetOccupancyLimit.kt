@@ -3,24 +3,23 @@ package com.rahul.oms
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_admin_login.*
-import kotlinx.android.synthetic.main.activity_dialog_box.*
+import kotlinx.android.synthetic.main.activity_set_occupancy_limit.*
 
-class DialogBox : AppCompatActivity() {
+class SetOccupancyLimit : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_dialog_box)
+        setContentView(R.layout.activity_set_occupancy_limit)
 
 
         btn_cancel.setOnClickListener()
         {
-            startActivity(Intent(this@DialogBox,Admin::class.java))
+            startActivity(Intent(this@SetOccupancyLimit,AdminDashboard::class.java))
         }
 
         btn_ok.setOnClickListener()
         {
-            var limit=txt_input.text.toString().toInt()
-            val i = Intent(this@DialogBox,DisplayHome::class.java)
+            val limit=txt_input.text.toString().toInt()
+            val i = Intent(this@SetOccupancyLimit,Home::class.java)
             i.putExtra("limit",limit)
             startActivity(i)
         }
