@@ -3,12 +3,12 @@ package com.rahul.oms
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_display_home.*
+import kotlinx.android.synthetic.main.activity_home.*
 
 class Home : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_display_home)
+        setContentView(R.layout.activity_home)
 
         help.setOnClickListener()
         {

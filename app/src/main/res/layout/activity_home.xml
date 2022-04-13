@@ -20,15 +20,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:text="@string/indian_institute_of_information_allahabad"
         android:textColor="@color/white"
-        android:textSize="25sp"
+        android:textSize="30sp"
         android:textStyle="bold" />
 
     <Button
         android:id="@+id/sign_in"
-        android:layout_width="120dp"
+        android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_below="@id/max_capacity"
         android:layout_alignParentLeft="true"
@@ -39,7 +39,7 @@
 
     <Button
         android:id="@+id/sign_up"
-        android:layout_width="120dp"
+        android:layout_width="100dp"
         android:layout_height="40dp"
         android:layout_below="@+id/available_seats"
         android:layout_alignParentRight="true"
@@ -62,7 +62,7 @@
             android:id="@+id/linearlayout1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="100dp"
+            android:layout_marginTop="60dp"
             android:layout_marginLeft="20dp"
             android:orientation="horizontal">
 
@@ -74,7 +74,7 @@
                 android:format12Hour="hh:mm::ss"
                 android:text="@string/date_time"
                 android:textColor="@color/white"
-                android:textSize="15sp" />
+                android:textSize="20sp" />
 
             <TextClock
                 android:id="@+id/date_time_am_pm"
@@ -84,7 +84,7 @@
                 android:format12Hour="a"
                 android:text="@string/am"
                 android:textColor="@color/white"
-                android:textSize="10sp" />
+                android:textSize="20sp" />
         </LinearLayout>
 
     <TextClock
@@ -96,7 +96,7 @@
         android:format12Hour="MMM dd, yyyy"
         android:text="@string/date"
         android:textColor="@color/white"
-        android:textSize="10sp" />
+        android:textSize="20sp" />
 
 
     <Button
@@ -134,16 +134,16 @@
         android:textSize="30sp"
         android:textStyle="bold" />
 
-    <TextView
-        android:id="@+id/max_capacity"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_marginLeft="20sp"
-        android:layout_marginTop="400dp"
-        android:text="@string/max_capacity"
-        android:textColor="@color/white"
-        android:textSize="15sp" />
+        <TextView
+            android:id="@+id/max_capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="40sp"
+            android:layout_marginTop="400dp"
+            android:text="@string/max_capacity"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
 
     <TextView
         android:id="@+id/available_seats"
@@ -151,10 +151,10 @@
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
         android:layout_marginTop="400dp"
-        android:layout_marginRight="20sp"
+        android:layout_marginRight="40sp"
         android:text="@string/available_seats"
         android:textColor="@color/white"
-        android:textSize="15sp" />
+        android:textSize="20sp" />
 
 
 
